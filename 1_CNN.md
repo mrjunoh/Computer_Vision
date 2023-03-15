@@ -23,4 +23,7 @@
 - 2D or 3D 구조를 유지하면서 학습
 - CNN은 conolution 연산, activation 연산, pooling 연산의 반복으로 구성됨
 - 일정 횟수 이상의 convolution 이후에는 Flatten 과정을 통해 이미지가 1차원의 벡터로 변환됨
+예시이미지
 ![image](https://user-images.githubusercontent.com/83350692/225309341-a1d0c862-e0b8-4b17-84b4-919aab98221d.png)
+- 밑에 9개의 블럭중 4개의 블럭을 뽑아서 그것을 한개의 feature로 만든 것이다.
+- 처음 3*3에서 새로운 2*2 feature로 바뀌게 된다.
