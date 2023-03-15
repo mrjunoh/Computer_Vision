@@ -11,6 +11,10 @@
 - DNN은 간단한 모델 학습을 위한 parameter의 수가 엄청나게 많다.
 - 만약, image 크기가 크고, hidden layer 개수가 많아지면 parameter 수는 급격하게 늘어날 수 있다.
 - parameter수가 많아지면 학습 시간도 오래 걸리고 과적합 문제도 발생할 수 있다.
-
-
+### 해결책
+- parameter의 수를 줄이기 위해 low level 변수(픽셀)를 조합하여 보다 적은 수의 parameter를 생성
+- feature enginerring: 기계학습, transform기법 등에 이용하여 feature 생성
+                       여기서 나온 feature은 오리지널보다 적은 데이터임 즉, 차원을 줄이는데 사용됨
+- feature engineering 기법을 통해 차원을 줄인 새로운 feature를 생성해서 모델에 input하는데 이 방법이 매우 힘듬
+- 그래서 CNN을 사용함
 
