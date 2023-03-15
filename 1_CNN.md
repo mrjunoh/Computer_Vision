@@ -68,3 +68,13 @@
 - convolution 과정이 끝난 후 pooling 전에 activation을 통과해서 비선형 변환을 해야한다.
 - 위 이미지에서는 relu를 사용해서 오른쪽 결과값이 나오게 된것이다.
 
+## Padding
+- Convolution 결과 이미지가 입력 이미지의 크기와 같으면 편리할 때가 많음
+- 가장자리에 있는 픽셀들은 중앙에 위치한 픽셀들에 비해 convolution 연산이 적게 수행됨
+- 이를 위한 해결책으로 원 이미지 테두리에 0의 값을 갖는 픽셀 추가
+- 테두리에 추가된 0값의 픽셀 -> pad, 테두리에 추가된 0값의 필셀 추가 -> zero padding
+![image](https://user-images.githubusercontent.com/83350692/225319012-23f0b100-476f-445c-8ef8-33fce81e404d.png)
+- 이미지에 0이 zero padding처리를 한 것이다.
+- 보통 convolution을 하면 이미지 크기가 줄어드는데 padding을 통해 입력 이미지 크기와 feature map 크기가 같아 진다.
+![image](https://user-images.githubusercontent.com/83350692/225319246-c272d596-2e07-48c3-a716-519ad1ebf86a.png)
+- padding 예시이미지
