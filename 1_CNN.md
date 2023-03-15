@@ -28,7 +28,7 @@
 - 밑에 9개의 블럭중 4개의 블럭을 뽑아서 그것을 한개의 feature로 만든 것이다.
 - 처음 3*3에서 새로운 2*2 feature로 바뀌게 된다.
 
-## convolution 과정 설명
+# convolution 과정 설명
 ![image](https://user-images.githubusercontent.com/83350692/225311282-e90ab5c8-885d-4ef1-a592-ebd3ff332054.png)
 
 ![image](https://user-images.githubusercontent.com/83350692/225311437-9de4872a-7aa8-439b-b600-1f3ad4ebeeca.png)
@@ -39,4 +39,27 @@
 - 그 필터가 한칸씩 이동을하면서 각 칸에 매칭되는 수끼리 곱해져서 다 더해지게 돼서 새로운 feature map이 생성됨
 - 한칸씩 이동은 stride=1이여서 한칸씩 이동 만약 stride=2면 2칸씩 이동함
 - 5*5 이미지가 3*3으로 바뀌게 된다.
+
+![image](https://user-images.githubusercontent.com/83350692/225312184-f7bdaa3c-aae0-4aec-a1ae-15c0be60c331.png)
+- stride=2라고 하면 2칸씩 이동을해서 5*5 -> 2*2가 된다.
+- 이렇게 되면 이미지의 특징을 놓칠 가능성이 증가한다.
+
+### convolution layer 예제
+![image](https://user-images.githubusercontent.com/83350692/225312805-602baecd-3679-4571-aaf2-19be8830cd83.png)
+- 4*4의 input 이미지가 있고
+- 필터는 3*3이다.
+- 여기서 뽑은 feature map은 2*2이다.
+  - 계산을 직접 보면
+![image](https://user-images.githubusercontent.com/83350692/225313191-36c275a8-57bb-4782-a244-0169d77eb482.png)
+
+![image](https://user-images.githubusercontent.com/83350692/225313340-570aabaa-630b-4b23-b8f2-c58b8eb6917c.png)
+- 필터를 원본 이미지에 적용을 시킨다. 즉 convolution(합성곱)을 한다.
+- 각 위치에 있는 픽셀들 끼리 곱하고 다 더해준다.
+- 그 값을 새로운 feature map의 한칸에 넣어준다.
+- stride=1로 한칸 옆으로 옮기고 다시 반복을 한다.
+- 그럼 4*4는 3*3 필터를 걸쳐서 최종적으로 2*2 feature map이 생성된다.
+
+![image](https://user-images.githubusercontent.com/83350692/225313711-71fcd267-19ad-446a-a33c-d80e7b2f8e23.png)
+- 필터(커널) 안에 있는 숫자들은 weight(파라미터)이다. 
+- 그래서 최적의 weight(파라미터)를 찾는 것이 인공지능이 할 일이다.
 
