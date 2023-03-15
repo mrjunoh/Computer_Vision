@@ -18,3 +18,9 @@
 - feature engineering 기법을 통해 차원을 줄인 새로운 feature를 생성해서 모델에 input하는데 이 방법이 매우 힘듬
 - 그래서 CNN을 사용함
 
+# CNN(Convolution Neural Network, 합성곱신경망)개념
+- 이미지 데이터의 특성을 잘 반영할 수 있는 인공신경망 모델
+- 2D or 3D 구조를 유지하면서 학습
+- CNN은 conolution 연산, activation 연산, pooling 연산의 반복으로 구성됨
+- 일정 횟수 이상의 convolution 이후에는 Flatten 과정을 통해 이미지가 1차원의 벡터로 변환됨
+![image](https://user-images.githubusercontent.com/83350692/225309341-a1d0c862-e0b8-4b17-84b4-919aab98221d.png)
