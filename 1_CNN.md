@@ -63,3 +63,8 @@
 - 필터(커널) 안에 있는 숫자들은 weight(파라미터)이다. 
 - 그래서 최적의 weight(파라미터)를 찾는 것이 인공지능이 할 일이다.
 
+## Activation
+![image](https://user-images.githubusercontent.com/83350692/225314844-7fe5a34d-e738-492c-b8ea-62a62ffee444.png)
+- convolution 과정이 끝난 후 pooling 전에 activation을 통과해서 비선형 변환을 해야한다.
+- 위 이미지에서는 relu를 사용해서 오른쪽 결과값이 나오게 된것이다.
+
