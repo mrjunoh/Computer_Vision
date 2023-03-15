@@ -78,3 +78,23 @@
 - 보통 convolution을 하면 이미지 크기가 줄어드는데 padding을 통해 입력 이미지 크기와 feature map 크기가 같아 진다.
 ![image](https://user-images.githubusercontent.com/83350692/225319246-c272d596-2e07-48c3-a716-519ad1ebf86a.png)
 - padding 예시이미지
+
+# Pooling
+- pooling은 feature map의 공간적 크기를 줄이는 층이다.
+- max pooling, average pooling이 있음 (주로 max pooling 사용)
+- pooling window 크기: 주로 stride값과 동일하게 설정
+![image](https://user-images.githubusercontent.com/83350692/225321061-c0dda06b-557a-4455-bca6-97babf7d3165.png)
+- max pooling은 2*2로 줄인다고 가정하면 그 feature map을 4등분 해서 각각 거기서 가장 큰 max 값만 출력한다.
+- aveage pooling은 말그대로 2*2 pooling을 한다면 4등분해서 각각의 평균을 낸 값이 출력된다.
+
+### Flattening
+- CNN과정을 다 걸치고 나면 faltten에 넣어서 기존의 신경망 학습을 진행한다.
+
+### CNN(공식 계산)
+![image](https://user-images.githubusercontent.com/83350692/225321937-e411b8a0-2148-4ced-806a-bda22a6fafa2.png)
+
+### CNN(하이퍼파라미터)
+![image](https://user-images.githubusercontent.com/83350692/225322008-848a6d82-4e04-4324-a2c2-86031d5ae9e2.png)
+- Filter 크기: filter의 크기를 뭘로 할거냐 3*3, 2*2 등등 결정
+- filter 수: filter의 개수를 1, 2가지 3가지 뭐를 쓰는지 정함 
+             filter의 수에 따라 feature map이 달라짐 feature map = channel이라고도 부름
