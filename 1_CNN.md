@@ -27,3 +27,7 @@
 ![image](https://user-images.githubusercontent.com/83350692/225309341-a1d0c862-e0b8-4b17-84b4-919aab98221d.png)
 - 밑에 9개의 블럭중 4개의 블럭을 뽑아서 그것을 한개의 feature로 만든 것이다.
 - 처음 3*3에서 새로운 2*2 feature로 바뀌게 된다.
+
+## convolution 과정 설명
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1bfeb53a-61d9-4595-8537-55ec91811922/Untitled.png)
+
