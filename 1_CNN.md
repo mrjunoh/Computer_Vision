@@ -87,11 +87,14 @@
 - max pooling은 2*2로 줄인다고 가정하면 그 feature map을 4등분 해서 각각 거기서 가장 큰 max 값만 출력한다.
 - aveage pooling은 말그대로 2*2 pooling을 한다면 4등분해서 각각의 평균을 낸 값이 출력된다.
 
+
 ### Flattening
 - CNN과정을 다 걸치고 나면 faltten에 넣어서 기존의 신경망 학습을 진행한다.
 
+
 ### CNN(공식 계산)
 ![image](https://user-images.githubusercontent.com/83350692/225321937-e411b8a0-2148-4ced-806a-bda22a6fafa2.png)
+
 
 ### CNN(하이퍼파라미터)
 ![image](https://user-images.githubusercontent.com/83350692/225322008-848a6d82-4e04-4324-a2c2-86031d5ae9e2.png)
