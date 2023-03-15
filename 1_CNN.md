@@ -29,5 +29,14 @@
 - 처음 3*3에서 새로운 2*2 feature로 바뀌게 된다.
 
 ## convolution 과정 설명
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1bfeb53a-61d9-4595-8537-55ec91811922/Untitled.png)
+![image](https://user-images.githubusercontent.com/83350692/225311282-e90ab5c8-885d-4ef1-a592-ebd3ff332054.png)
+
+![image](https://user-images.githubusercontent.com/83350692/225311437-9de4872a-7aa8-439b-b600-1f3ad4ebeeca.png)
+
+![image](https://user-images.githubusercontent.com/83350692/225311969-fee7262c-d220-498e-b0a0-3855c85766fb.png)
+
+- 필터(커널)이 있음 이미지상은 3*3임
+- 그 필터가 한칸씩 이동을하면서 각 칸에 매칭되는 수끼리 곱해져서 다 더해지게 돼서 새로운 feature map이 생성됨
+- 한칸씩 이동은 stride=1이여서 한칸씩 이동 만약 stride=2면 2칸씩 이동함
+- 5*5 이미지가 3*3으로 바뀌게 된다.
 
